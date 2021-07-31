@@ -60,7 +60,7 @@ class Firefly{
     this.vel.add(this.a);
     this.vel.limit(this.ts);
     this.loc.add(this.vel);
-    this.lum -= 1;
+    this.lum -= random(1);
   }
   
   display(){
