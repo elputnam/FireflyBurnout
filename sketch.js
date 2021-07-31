@@ -30,8 +30,6 @@ function draw() {
     w1 += 1;
     lum += 0.5;
 
-
-
   if (w1 >= windowHeight){
     w1 = 0;
     background(0);
