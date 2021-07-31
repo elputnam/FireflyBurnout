@@ -32,7 +32,7 @@ function draw() {
 
 
 
-  if (w1 >= windowWidth*1.25){
+  if (w1 >= windowWidth){
     w1 = 0;
     background(0);
   }
