@@ -65,7 +65,7 @@ class Firefly{
   
   display(){
     push();
-    fill(random(70,130), 100, 100, this.lum);
+    fill(random(70,130), 100, this.lum, this.lum);
     noStroke()
     translate(this.loc);
     plane(random(3), random(3));
