@@ -25,7 +25,7 @@ function draw() {
     noStroke();
     // strokeWeight(random(5, 10));
     // stroke(random(50,100), random(30), 100, lum);
-    fill(random(50,100), random(30), 100, 10);
+    fill(random(50,100), lum, 100, 10);
     circle(0, 0, w1);
     w1 += 1;
     lum += 0.5;
@@ -60,15 +60,15 @@ class Firefly{
     this.vel.add(this.a);
     this.vel.limit(this.ts);
     this.loc.add(this.vel);
-    this.lum -= random(1);
+    this.lum -= 0.5;
   }
   
   display(){
     push();
-    fill(random(70,130), 100, 100, this.lum);
+    fill(random(70,130), this.lum, this.lum, random(this.lum));
     noStroke()
     translate(this.loc);
-    plane(random(3), random(3));
+    plane(random(10), random(10));
     pop();
     }
   
