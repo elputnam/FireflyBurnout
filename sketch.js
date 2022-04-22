@@ -78,3 +78,7 @@ class Firefly{
     }
   }
 }
+
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
+}
